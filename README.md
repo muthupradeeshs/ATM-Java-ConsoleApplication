@@ -40,3 +40,5 @@ This Java program simulates a basic ATM system with features such as checking ba
 
 1. Clone the repository:
 https://github.com/muthupradeeshs/ATM-Java-ConsoleApplication)https://github.com/muthupradeeshs/ATM-Java-ConsoleApplication
+## Console Output ScreenShot
+https://drive.google.com/drive/folders/1GnP51zWLHBdo2JF8YK6tWUnnNnK-GpD_
