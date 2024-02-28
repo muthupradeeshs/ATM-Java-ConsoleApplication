@@ -4,7 +4,6 @@ import java.util.Scanner;
 
 import com.muthupradeesh.atm.dto.Card;
 
-
 public class ChangePinView {
 	private ChangePinViewModel changePINViewModel;
 
@@ -17,7 +16,11 @@ public class ChangePinView {
 		System.out.print("Enter your Mobile Number : ");
 		long mobileNumber = scan.nextLong();
 		scan.nextLine();
-		changePINViewModel.changePIN(card, mobileNumber);
+		boolean choise = changePINViewModel.changePIN(card, mobileNumber);
+		if (choise)
+			getInputPIN(card);
+		else
+			changePIN(card);
 	}
 
 	public void getInputPIN(Card card) {
