@@ -3,16 +3,14 @@ package com.muthupradeesh.atm.changepin;
 import com.muthupradeesh.atm.dto.Card;
 
 class ChangePinViewModel {
-	private ChangePinView changePIN;
 
-
-	public void changePIN(Card card, long mobileNumber) {
+	public boolean changePIN(Card card, long mobileNumber) {
 		long userMobile = card.getBankCustomer().getMobileNumber();
 		if (userMobile != mobileNumber) {
 			System.out.println("Entered Wrong Mobile Number");
-			return;
-		}
-		changePIN.getInputPIN(card);
+			return false;
+		} else
+			return true;
 	}
 
 	public void confirmChangePIN(Card card, short pin, short confirmPIN) {
